@@ -26,7 +26,7 @@ const randomIntegerFromInterval = (min, max) => {
 function onChangeColour(){  
   refs.buttonStart.disabled = true;
   intervalId = setInterval(() => {
-      const positionColour = randomIntegerFromInterval(0, 5);
+      const positionColour = randomIntegerFromInterval(0, colors.length - 1);
       refs.body.style.backgroundColor = colors[positionColour];
   }, PROM_DELAY);
 }
